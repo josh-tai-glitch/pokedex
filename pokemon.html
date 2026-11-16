@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>寶可夢圖鑑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><span class="ball"></span>寶可夢圖鑑</a>
+      <nav class="site-nav">
+        <a data-page="index.html" href="index.html">圖鑑</a>
+        <a data-page="wiki.html" href="wiki.html">Wiki</a>
+        <a data-page="types.html" href="types.html">屬性相剋表</a>
+        <a data-page="compare.html" href="compare.html">比較</a>
+        <a data-page="quiz.html" href="quiz.html">小測驗</a>
+        <a id="random-btn" href="#" title="隨機看一隻">🎲</a>
+        <button id="theme-btn" type="button" title="切換深色模式">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="detail"><p class="loading">載入中…</p></div>
+  </main>
+
+  <footer class="site-footer">
+    圖片來源：<a href="https://github.com/PokeAPI/sprites">PokeAPI/sprites</a>・本站為課堂作業，寶可夢版權屬於 Nintendo / Creatures / GAME FREAK
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="assets/app.js"></script>
+  <script>initDetailPage();</script>
+</body>
+</html>

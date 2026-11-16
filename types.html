@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>屬性相剋表｜寶可夢圖鑑</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html"><span class="ball"></span>寶可夢圖鑑</a>
+      <nav class="site-nav">
+        <a data-page="index.html" href="index.html">圖鑑</a>
+        <a data-page="wiki.html" href="wiki.html">Wiki</a>
+        <a data-page="types.html" href="types.html">屬性相剋表</a>
+        <a data-page="compare.html" href="compare.html">比較</a>
+        <a data-page="quiz.html" href="quiz.html">小測驗</a>
+        <a id="random-btn" href="#" title="隨機看一隻">🎲</a>
+        <button id="theme-btn" type="button" title="切換深色模式">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h2>屬性相剋表</h2>
+      <p class="muted">左側是<strong>攻擊方</strong>的招式屬性，上方是<strong>防守方</strong>寶可夢的屬性。滑過格子可以高亮整列與整欄。想看更詳細的說明，請看 Wiki 的<a href="wiki.html?page=type-system">屬性系統</a>條目。</p>
+      <div class="legend">
+        <span><i class="eff-2"></i>2 倍（效果絕佳）</span>
+        <span><i class="eff-05"></i>½ 倍（效果不好）</span>
+        <span><i class="eff-0"></i>0 倍（沒有效果）</span>
+        <span><i></i>空白 = 1 倍</span>
+      </div>
+      <div class="table-wrap"><table id="type-table" class="type-table"></table></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    圖片來源：<a href="https://github.com/PokeAPI/sprites">PokeAPI/sprites</a>・本站為課堂作業，寶可夢版權屬於 Nintendo / Creatures / GAME FREAK
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="assets/app.js"></script>
+  <script>initTypesPage();</script>
+</body>
+</html>
