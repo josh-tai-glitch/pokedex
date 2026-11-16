@@ -2,7 +2,7 @@
 
 用 **Markdown 撰寫內容、網頁自動呈現** 的寶可夢圖鑑靜態網站，搭配 `CLAUDE.md` 讓 AI 能依照同一套規則持續擴充內容。
 
-- 🌐 網頁：https://<你的帳號>.github.io/pokedex/
+- 🌐 網頁：https://<josh-tai-glitch>.github.io/pokedex/
 - 📘 AI 規則：[CLAUDE.md](CLAUDE.md)
 
 ## 功能
